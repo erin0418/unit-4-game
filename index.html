@@ -5,14 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mario Random Number Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="container">
-        <img class="item" id="bag" src="assets/images/bag.png">
-        <img class="item" id="coin" src="assets/images/coin.png">
-        <img class="item" id="treasure" src="assets/images/treasure.png">
-        <img class="item" id="mushroom" src="assets/images/mushroom.png">
+        <header>
+            <img class="title" src="assets/images/Mario Coin Collector.jpg">
+        </header>
+        <div class="gameContainer">
+            <div class="itemContainer">
+                <img class="item" id="bag" src="assets/images/bag.png">
+                <img class="item" id="coin" src="assets/images/coin.jpg">
+                <img class="item" id="treasure" src="assets/images/treasure.jpg">
+                <img class="item" id="mushroom" src="assets/images/mushroom.jpg">
+            </div>
+            <div class="row">
+                <div class="col-md-4 randomNumber">
+                </div>
+                <div class="col-md-4 yourNumber">
+                </div>
+            </div>
+        </div>
     </div>
+<script src="assets/javascript/game.js"></script>
 </body>
 </html>
