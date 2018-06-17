@@ -6,6 +6,11 @@ body {
     width: 160px;
     background-color: white;
 }
+img {
+    height: 160px;
+    width: 160px;
+}
+
 .container {
     margin: auto;
     width: 960px;
@@ -17,7 +22,6 @@ header {
 }
 .randomNumber {
     text-align: center;
-    padding:50px;
     font-size: 48pt;
     background-color: white;
     border: 2px solid gray;
@@ -26,10 +30,9 @@ header {
 }
 .yourNumber {
     text-align: center;
-    padding:50px;
     font-size: 48pt;
     background-color: white;
-    border: 2px solid gray;
+    border: 2px solid navy;
     width: 100px;
     margin: auto;
 }
@@ -37,10 +40,14 @@ header {
     margin: auto;
     width: 900px;
     text-align: center;
-    padding: 30px;
+    padding: 10px;
+    background-color: navy;
 }
 
 .title {
-    width: 800px;
-    height: 200px;
+    width: 500px;
+    height: 100px;
+}
+.row {
+    padding: 20px;
 }
