@@ -1,0 +1,11 @@
+body {
+    background: url("../images/background.png");
+}
+.item {
+    height: 150px;
+    width: 150px;
+}
+.container {
+    margin: auto;
+    width: 960px;
+}
