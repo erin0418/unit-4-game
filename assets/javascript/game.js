@@ -4,25 +4,35 @@ var treasure = (Math.floor(Math.random() * 12) +1);
 var mushroom = (Math.floor(Math.random() * 12) +1);
 var coin = (Math.floor(Math.random() * 12)+1);
 var bag = (Math.floor(Math.random() * 12)+1);
+var wins = 0;
+var loses = 0;
 
 $(".yourNumber").append(yourNumber);
 $(".randomNumber").append(randomNumber);
+$("#wins").append(wins);
+$("#loses").append(loses);
 
+if (yourNumber != randomNumber) {
 $("#bag").on("click", function (){
     yourNumber=(yourNumber + bag);
-    $(".yourNumber").html(yourNumber);
 }) 
 $("#treasure").on("click", function (){
     yourNumber=(yourNumber + treasure);
-    $(".yourNumber").html(yourNumber);
 })
 $("#coin").on("click", function (){
     yourNumber=(yourNumber + coin);
-    $(".yourNumber").html(yourNumber);
 })
 $("#mushroom").on("click", function (){
     yourNumber=(yourNumber + mushroom);
-    $(".yourNumber").html(yourNumber);
 })
+$(".yourNumber").html(yourNumber);
+}
+else if (yourNumber > randomNumber) {
+    console.log("You lose!")
+}
+else {
+    alert("You Win!")
+}
 
+// if (yourNumber === randomNumber)
 
