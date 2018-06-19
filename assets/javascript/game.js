@@ -40,12 +40,14 @@ function youLose () {
     $("#loses").text("Loses: " + loses);
 }
 
-// On click adding random numbers together and checking conditions
+// On click adding random numbers together
 $("#bag").on("click", function (){
     yourNumber=(yourNumber + bag);
+    // Making mario move on click and writing number
     $(".mario").animate({ top: "-=100px" }, "normal");
     $(".yourNumber").html(yourNumber);
     $(".mario").animate({ top: "+=100px" }, "normal");
+    // Checking conditions
     if (yourNumber > randomNumber) {
         youLose ();
         startOver();
