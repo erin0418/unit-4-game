@@ -2,13 +2,13 @@ body {
     background: url("../images/background.png");
 }
 .item {
-    height: 160px;
-    width: 160px;
+    height: 130px;
+    width: 130px;
     background-color: white;
 }
 img {
-    height: 160px;
-    width: 160px;
+    height: 130px;
+    width: 130px;
 }
 
 .container {
@@ -37,7 +37,6 @@ h4 {
     margin: auto;
     width: 750px;
     text-align: center;
-    padding: 10px;
     background-color: navy;
 }
 
@@ -62,7 +61,7 @@ h4 {
 .score {
     color: yellow;
     font-size: 18pt;    
-    padding: 20px;
+    padding: 10px;
 }
 #wins {
     width: 300px;
@@ -76,4 +75,7 @@ h4 {
     margin: auto;
     width: 800px;
     text-align: center;
+}
+.mario {
+    clear: both;
 }

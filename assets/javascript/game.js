@@ -1,6 +1,6 @@
 // Setting random number variables
 var yourNumber = 0;
-var randomNumber = (Math.floor(Math.random() * 100) + 48);
+var randomNumber = (Math.floor(Math.random() * 100) + 19);
 var treasure = (Math.floor(Math.random() * 12) +1);
 var mushroom = (Math.floor(Math.random() * 12) +1);
 var coin = (Math.floor(Math.random() * 12)+1);
@@ -26,7 +26,7 @@ function startOver() {
     mushroom = (Math.floor(Math.random() * 12) +1);
     coin = (Math.floor(Math.random() * 12)+1);
     bag = (Math.floor(Math.random() * 12)+1);
-    randomNumber = (Math.floor(Math.random() * 100) + 48);
+    randomNumber = (Math.floor(Math.random() * 100) + 19);
     $(".randomNumber").text(randomNumber);
 }
 
@@ -43,7 +43,9 @@ function youLose () {
 // On click adding random numbers together and checking conditions
 $("#bag").on("click", function (){
     yourNumber=(yourNumber + bag);
-    $(".yourNumber").text(yourNumber);
+    $(".mario").animate({ top: "-=100px" }, "normal");
+    $(".yourNumber").html(yourNumber);
+    $(".mario").animate({ top: "+=100px" }, "normal");
     if (yourNumber > randomNumber) {
         youLose ();
         startOver();
@@ -55,7 +57,9 @@ $("#bag").on("click", function (){
 }) 
 $("#treasure").on("click", function (){
     yourNumber=(yourNumber + treasure);
+    $(".mario").animate({ top: "-=100px" }, "normal");
     $(".yourNumber").html(yourNumber);
+    $(".mario").animate({ top: "+=100px" }, "normal");
     if (yourNumber > randomNumber) {
         youLose ();
         startOver();
@@ -67,7 +71,9 @@ $("#treasure").on("click", function (){
 })
 $("#coin").on("click", function (){
     yourNumber=(yourNumber + coin);
+    $(".mario").animate({ top: "-=100px" }, "normal");
     $(".yourNumber").html(yourNumber);
+    $(".mario").animate({ top: "+=100px" }, "normal");
     if (yourNumber > randomNumber) {
         youLose ();
         startOver();
@@ -79,7 +85,9 @@ $("#coin").on("click", function (){
 })
 $("#mushroom").on("click", function (){
     yourNumber=(yourNumber + mushroom);
+    $(".mario").animate({ top: "-=100px" }, "normal");
     $(".yourNumber").html(yourNumber);
+    $(".mario").animate({ top: "+=100px" }, "normal");
     if (yourNumber > randomNumber) {
         youLose ();
         startOver();
