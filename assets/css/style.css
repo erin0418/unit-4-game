@@ -23,10 +23,11 @@ header {
 .randomNumber, .yourNumber{
     text-align: center;
     font-size: 48pt;
-    background-color: white;
+    background: url("../images/block.jpg");
     border: 2px solid navy;
-    width: 100px;
     margin: auto;
+    height: 140px;
+    color: yellow;
 }
 h4 {
     color: white;
